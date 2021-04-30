@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #4eccda;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.admin.master_menu.AdminMastersEditController">
+   <children>
+      <ImageView fitHeight="166.0" fitWidth="1027.0" layoutX="178.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../assets/DarthDreads.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="64.0" layoutY="338.0" prefHeight="535.0" prefWidth="976.0" style="-fx-background-color: #b3eef5;" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="504.0" prefWidth="176.0" style="-fx-background-color: #d4f8fc;">
+               <children>
+                  <Button fx:id="lkBtn" layoutX="16.0" layoutY="39.0" mnemonicParsing="false" onAction="#openLKmenu" text="Личный кабинет">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="timetableBtn" layoutX="16.0" layoutY="92.0" mnemonicParsing="false" onAction="#openTimetableMenu" prefHeight="37.0" prefWidth="145.0" text="Расписание">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="mastersBtn" layoutX="16.0" layoutY="147.0" mnemonicParsing="false" onAction="#openMastersMenu" prefHeight="37.0" prefWidth="145.0" text="Мастера">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="clientsBtn" layoutX="16.0" layoutY="201.0" mnemonicParsing="false" onAction="#openClientMenu" prefHeight="37.0" prefWidth="145.0" text="Клиенты">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitBtn" layoutX="16.0" layoutY="453.0" mnemonicParsing="false" onAction="#goToAuthMenu" prefHeight="37.0" prefWidth="145.0" text="Выход">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="66.0" layoutY="5.0" text="Меню">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="420.0" layoutY="14.0" text="Редактировать информацию о мастере">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="secondNameLabel" layoutX="300.0" layoutY="48.0" prefHeight="37.0" prefWidth="292.0" />
+            <TextField fx:id="firstNameLabel" layoutX="300.0" layoutY="96.0" prefHeight="37.0" prefWidth="292.0" />
+            <TextField fx:id="patronymicLabel" layoutX="300.0" layoutY="142.0" prefHeight="37.0" prefWidth="292.0" />
+            <TextField fx:id="phoneLabel" layoutX="300.0" layoutY="197.0" prefHeight="37.0" prefWidth="292.0" />
+            <Label layoutX="210.0" layoutY="48.0" text="Фамилия">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="210.0" layoutY="142.0" text="Отчество">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="213.0" layoutY="192.0" text="Телефон">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="210.0" layoutY="96.0" text="Имя">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="213.0" layoutY="253.0" text="Email">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="682.0" layoutY="53.0" text="Пн">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mondayStartH" layoutX="713.0" layoutY="48.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="mondayStartM" layoutX="752.0" layoutY="48.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="748.0" layoutY="53.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mondayEndH" layoutX="815.0" layoutY="48.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="mondayEndM" layoutX="854.0" layoutY="48.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="850.0" layoutY="53.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="797.0" layoutY="53.0" text="-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="684.0" layoutY="110.0" text="Вт">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tuesdayStartH" layoutX="715.0" layoutY="105.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="tuesdayStartM" layoutX="754.0" layoutY="105.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="750.0" layoutY="110.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tuesdayEndH" layoutX="817.0" layoutY="105.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="tuesdayEndM" layoutX="856.0" layoutY="105.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="852.0" layoutY="110.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="799.0" layoutY="110.0" text="-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="684.0" layoutY="156.0" text="Ср">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="wednesdayStartH" layoutX="715.0" layoutY="151.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="wednesdayStartM" layoutX="754.0" layoutY="151.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="750.0" layoutY="156.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="wednesdayEndH" layoutX="817.0" layoutY="151.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="wednesdayEndM" layoutX="856.0" layoutY="151.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="852.0" layoutY="156.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="799.0" layoutY="156.0" text="-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="684.0" layoutY="206.0" text="Чт">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="thursdayStartH" layoutX="715.0" layoutY="201.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="thursdayStartM" layoutX="754.0" layoutY="201.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="750.0" layoutY="206.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="thursdayEndH" layoutX="817.0" layoutY="201.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="thursdayEndM" layoutX="856.0" layoutY="201.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="852.0" layoutY="206.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="799.0" layoutY="206.0" text="-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="684.0" layoutY="258.0" text="Пт">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fridayStartH" layoutX="715.0" layoutY="253.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="fridayStartM" layoutX="754.0" layoutY="253.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="750.0" layoutY="258.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fridayEndH" layoutX="817.0" layoutY="253.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="fridayEndM" layoutX="856.0" layoutY="253.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="852.0" layoutY="258.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="799.0" layoutY="258.0" text="-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="684.0" layoutY="319.0" text="Сб">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="saturdayStartH" layoutX="715.0" layoutY="314.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="saturdayStartM" layoutX="754.0" layoutY="314.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="750.0" layoutY="319.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="saturdayEndH" layoutX="817.0" layoutY="314.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="saturdayEndM" layoutX="856.0" layoutY="314.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="852.0" layoutY="319.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="799.0" layoutY="319.0" text="-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="684.0" layoutY="376.0" text="Вс">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="sundayStartH" layoutX="715.0" layoutY="371.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="sundayStartM" layoutX="754.0" layoutY="371.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="750.0" layoutY="376.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="sundayEndH" layoutX="817.0" layoutY="371.0" prefHeight="37.0" prefWidth="35.0" />
+            <TextField fx:id="sundayEndM" layoutX="856.0" layoutY="371.0" prefHeight="37.0" prefWidth="35.0" />
+            <Label layoutX="852.0" layoutY="376.0" text=":">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="799.0" layoutY="376.0" text="-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="service1CB" layoutX="210.0" layoutY="319.0" mnemonicParsing="false" text="Капсульное наращивание">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="service2CB" layoutX="210.0" layoutY="363.0" mnemonicParsing="false" text="Брейды">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="service3CB" layoutX="210.0" layoutY="408.0" mnemonicParsing="false" text="Афрокосы">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="service4CB" layoutX="210.0" layoutY="455.0" mnemonicParsing="false" text="Вплетение де дред">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="editBtn" layoutX="731.0" layoutY="464.0" mnemonicParsing="false" onAction="#editMaster" prefHeight="37.0" prefWidth="145.0" text="Редактировать">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="masterEditLabel" layoutX="700.0" layoutY="422.0" text="Информация обновлена!" visible="false">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="masterEditErrorLabel" layoutX="684.0" layoutY="422.0" text="Проверьте введеные данные" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="mailLabel" layoutX="300.0" layoutY="254.0" text="Email">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="helloUserLabel" layoutX="24.0" layoutY="176.0" text="Добро пожаловать, Имя_Пользователя!">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

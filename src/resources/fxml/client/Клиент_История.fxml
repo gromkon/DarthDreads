@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #4eccda;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.client.history_menu.ClientHistoryController">
+   <children>
+      <ImageView fitHeight="166.0" fitWidth="1027.0" layoutX="178.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../assets/DarthDreads.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="24.0" layoutY="210.0" prefHeight="535.0" prefWidth="976.0" style="-fx-background-color: #b3eef5;" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="504.0" prefWidth="176.0" style="-fx-background-color: #d4f8fc;">
+               <children>
+                  <Button fx:id="lkBtn" layoutX="16.0" layoutY="39.0" mnemonicParsing="false" onAction="#openLKmenu" text="Личный кабинет">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitBtn" layoutX="16.0" layoutY="453.0" mnemonicParsing="false" onAction="#goToAuthMenu" prefHeight="37.0" prefWidth="145.0" text="Выход">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="60.0" layoutY="-1.0" text="Меню">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="historyBtn" layoutX="16.0" layoutY="88.0" mnemonicParsing="false" onAction="#goToHistoryMenu" prefHeight="37.0" prefWidth="143.0" text="История">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="comingBtn" layoutX="17.0" layoutY="141.0" mnemonicParsing="false" onAction="#goToComingMenu" prefHeight="37.0" prefWidth="143.0" text="Предстоящие">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="513.0" layoutY="22.0" text="История посещений">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="visitsLabel" layoutX="249.0" layoutY="74.0" text="&lt;Записи=)">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label fx:id="helloUserLabel" layoutX="24.0" layoutY="173.0" text="Добро пожаловать, Имя_Пользователя!">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

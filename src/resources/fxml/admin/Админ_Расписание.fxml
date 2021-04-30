@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #4eccda;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.admin.timetable_menu.AdminTimetableController">
+   <children>
+      <ImageView fitHeight="166.0" fitWidth="1027.0" layoutX="178.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../assets/DarthDreads.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="64.0" layoutY="338.0" prefHeight="535.0" prefWidth="976.0" style="-fx-background-color: #b3eef5;" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="504.0" prefWidth="176.0" style="-fx-background-color: #d4f8fc;">
+               <children>
+                  <Button fx:id="lkBtn" layoutX="16.0" layoutY="39.0" mnemonicParsing="false" onAction="#openLKmenu" text="Личный кабинет">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="timetableBtn" layoutX="16.0" layoutY="92.0" mnemonicParsing="false" onAction="#openTimetableMenu" prefHeight="37.0" prefWidth="145.0" text="Расписание">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="mastersBtn" layoutX="16.0" layoutY="147.0" mnemonicParsing="false" onAction="#openMastersMenu" prefHeight="37.0" prefWidth="145.0" text="Мастера">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="clientsBtn" layoutX="16.0" layoutY="201.0" mnemonicParsing="false" onAction="#openClientMenu" prefHeight="37.0" prefWidth="145.0" text="Клиенты">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitBtn" layoutX="16.0" layoutY="453.0" mnemonicParsing="false" onAction="#goToAuthMenu" prefHeight="37.0" prefWidth="145.0" text="Выход">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="63.0" layoutY="1.0" prefHeight="27.0" prefWidth="51.0" text="Меню">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="timetableTbl" layoutX="208.0" layoutY="41.0" prefHeight="404.0" prefWidth="757.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="208.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="41.0">
+              <columns>
+                  <TableColumn prefWidth="45.0" text="Время">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="time" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="94.0" text="Пн">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="monday" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="94.0" text="Вт">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="tuesday" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="92.0" text="Ср">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="wednesday" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="101.0" text="Чт">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="thursday" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="100.0" text="Пт">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="friday" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn minWidth="0.0" prefWidth="91.0" text="Сб">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="saturday" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="87.0" text="Вс">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="sunday" />
+                     </cellValueFactory>
+                  </TableColumn>
+              </columns>
+            </TableView>
+            <Button fx:id="changeVisitBtn" layoutX="586.0" layoutY="468.0" mnemonicParsing="false" onAction="#changeVisit" prefHeight="37.0" prefWidth="376.0" text="Редактировать">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="532.0" layoutY="14.0" prefHeight="27.0" prefWidth="97.0" text="Расписание" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="911.0" layoutY="4.0" mnemonicParsing="false" onAction="#nextWeek" prefHeight="27.0" prefWidth="25.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/right_arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="862.0" layoutY="4.0" mnemonicParsing="false" onAction="#prevWeek" prefHeight="27.0" prefWidth="25.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/left_arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="infoBtn" layoutX="208.0" layoutY="468.0" mnemonicParsing="false" onAction="#showInfo" prefHeight="37.0" prefWidth="376.0" text="Информация">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+         </children></AnchorPane>
+      <Label fx:id="helloUserLabel" layoutX="25.0" layoutY="179.0" prefHeight="27.0" prefWidth="674.0" text="Добро пожаловать, Имя_Пользователя!">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
